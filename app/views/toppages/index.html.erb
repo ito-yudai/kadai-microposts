@@ -1,3 +1,10 @@
+<% if logged_in? %>
+
+<p>ログイン完了ユーザ：
+<%= current_user.name %>
+</p>
+<% else %>
+
 <div class="jumbotron">
 	<div class="container">
         <h1>Welcome to Microposts</h1>
@@ -6,3 +13,5 @@
 
 	</div>
 </div>
+
+<% end %>
